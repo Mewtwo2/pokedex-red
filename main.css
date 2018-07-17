@@ -5,6 +5,8 @@ body {
 nav {
   padding: .1% 0%;
   background-color: #EE6B2F;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
   margin-bottom: 1%; /*This is what is making your red info div spaced form the navbar*/
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
 }
@@ -56,6 +58,7 @@ nav img {
   font-size: 350%;
   color:white;
   padding:2% 2% 1% 2%; /*top right bottom left*/
+  border-radius: 10px;
   position:absolute;
   top:20%;
   right:35%;
@@ -69,6 +72,7 @@ nav img {
   padding:2% 2% 1% 2%; /*top right bottom left*/
   position:absolute;
   text-align:center;
+  border-radius: 10px;
   bottom:20%;
   right:10%;
   left: 25%;
@@ -78,16 +82,24 @@ nav img {
 
 .red-rotation {
   align-self: auto;
-  background-color: red;
+  border-radius: 10px;
   max-width:90%;
   width:90%;
   margin:0 auto;
+  margin-right: 6% !important;
   display:grid;
   grid-template-columns:33.3% 33.3% 33.3%;
   grid-template-rows:100%;
+  grid-gap: 1%;
 }
 
 .red-rotation div{
   text-align:center;
+  background-color: #E3350D;
+  border-radius: 10px;
   border: 2px solid black;
+}
+
+.red-rotation div img {
+  height:300px;
 }
