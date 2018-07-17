@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+
+nav {
+  padding: .1% 0%;
+  background-color: #EE6B2F;
+  margin-bottom: 1%; /*This is what is making your red info div spaced form the navbar*/
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+nav ul {
+  margin:0;
+  margin-top:1.4%;
+  max-width: 50%;
+  padding-left: 0.5%;
+}
+
+nav ul a li {
+  font-family: sans-serif;
+  font-size: 140%;
+  font-weight:500;
+  color:white;
+  padding: 2%;
+  text-align: left;
+  display: inline;
+}
+
+nav ul a li:hover{
+  background-color: #DA471B;
+  border-radius: 6px;
+  font-weight: bold;
+  /* box-shadow: 0px 4px 2px 0px rgba(0,0,0,0.5); */
+}
+
+a {
+  text-decoration: none;
+}
+
+.red-info {
+  border-radius: 6px;
+  align-content: center;
+  margin: 0 auto;
+  width: 90%;
+  background-color: rgba(255,218,0,1);
+}
+
+nav img {
+  position: relative;
+  margin-left: 95%;
+  height:40px;
+  margin-top: -3%;
+}
+
+h2 {
+  font-size: 300%;
+  color:white;
+  padding:1% 2%;
+  position:absolute;
+  top:20%;
+  right:25%;
+  text-transform: uppercase;
+  background-color: rgba(170,93,97,0.7);
+}
