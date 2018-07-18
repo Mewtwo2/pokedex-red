@@ -1,3 +1,4 @@
+var iChooseYou;
 var hp;
 var atk;
 var def;
@@ -9,14 +10,13 @@ function loadDoc() {
   xhhtp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var parsedObject = JSON.parse(this.responseText);
+      // parsedObject[]
       console.log(parsedObject);
     }
   };
 
-  var pikaPika = "pikachu";
-
-  xhhtp.open("GET", `https://pokeapi.co/api/v2/pokemon/${pikaPika}`, true);
   // xhhtp.open("GET", `https://pokeapi-nycda.firebaseio.com/pokemon/25.json`, true); // This is the backup api call
+  xhhtp.open("GET", `https://pokeapi.co/api/v2/pokemon/${iChooseYou}`, true);
   xhhtp.send();
 }
 
@@ -46,6 +46,7 @@ class Red extends Trainer {
   }
 
   get(pokemon) {
-
+    iChooseYou = pokemon;
   }
+
 }
