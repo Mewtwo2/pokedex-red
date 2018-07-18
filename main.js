@@ -4,25 +4,23 @@ var atk;
 var def;
 // var abilities;
 
-function loadDoc() {
-  var xhhtp = new XMLHttpRequest();
+var xhhtp = new XMLHttpRequest();
 
-  xhhtp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var parsedObject = JSON.parse(this.responseText);
-      var abilityArray = parsedObject['abilities'];
+xhhtp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var parsedObject = JSON.parse(this.responseText);
+    var abilityArray = parsedObject['abilities'];
 
-      for (obj in abilityArray) {
-        console.log(abilityArray[obj]['ability']['name']);
-      }
-
+    for (obj in abilityArray) {
+      console.log(abilityArray[obj]['ability']['name']);
     }
-  };
 
-  xhhtp.open("GET", `https://pokeapi-nycda.firebaseio.com/pokemon/25.json`, true); // This is the backup api call
-  // xhhtp.open("GET", `https://pokeapi.co/api/v2/pokemon/${iChooseYou}`, true);
-  xhhtp.send();
-}
+  }
+};
+
+xhhtp.open("GET", `https://pokeapi-nycda.firebaseio.com/pokemon/25.json`, true); // This is the backup api call
+// xhhtp.open("GET", `https://pokeapi.co/api/v2/pokemon/${iChooseYou}`, true);
+xhhtp.send();
 
 class Trainer {
   constructor() {
@@ -55,7 +53,6 @@ class Red extends Trainer {
 
   get(pokemon) {
     iChooseYou = pokemon;
-    loadDoc();
   }
 
 }

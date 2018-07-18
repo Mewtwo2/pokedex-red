@@ -95,9 +95,6 @@ nav img {
 
 .red-rotation div{
   text-align:center;
-  /* background-color: #E3350D; */
-  border-radius: 10px;
-  /* border: 2px solid black; */
 }
 
 .red-rotation div img {
@@ -110,4 +107,28 @@ nav img {
 .red-rotation div img:hover {
   height:350px;
   cursor:pointer;
+}
+
+.pokedex-info {
+  /* display: none; */
+  background-color: #1B53BA;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom:2%;
+  margin-bottom:1%;
+}
+
+.pokedex-info img {
+  text-align: center;
+  width:200px;
+}
+
+.pokedex-info .pokemon-info {
+  background-color: #EE6B2F;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
 }
