@@ -2,25 +2,43 @@ var iChooseYou;
 var hp;
 var atk;
 var def;
-// var abilities;
+var abilities = [];
 
 var xhhtp = new XMLHttpRequest();
 
-xhhtp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var parsedObject = JSON.parse(this.responseText);
-    var abilityArray = parsedObject['abilities'];
+function callPokemon() {
+  xhhtp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var parsedObject = JSON.parse(this.responseText);
 
-    for (obj in abilityArray) {
-      console.log(abilityArray[obj]['ability']['name']);
+      console.log(parsedObject);
+
+      var abilityArray = parsedObject['abilities'];
+      abilities = [];
+
+      hp = parsedObject['stats'][5]['base_stat'];
+      console.log(hp);
+
+      atk = parsedObject['stats'][4]['base_stat'];
+      console.log(atk);
+
+      def = parsedObject['stats'][3]['base_stat'];
+      console.log(def);
+
+      for (obj in abilityArray) {
+        console.log(abilityArray[obj]['ability']['name']);
+        abilities.push(abilityArray[obj]['ability']['name']);
+      }
+
+      console.log(abilities);
+
     }
+  };
 
-  }
-};
-
-xhhtp.open("GET", `https://pokeapi-nycda.firebaseio.com/pokemon/25.json`, true); // This is the backup api call
-// xhhtp.open("GET", `https://pokeapi.co/api/v2/pokemon/${iChooseYou}`, true);
-xhhtp.send();
+  // xhhtp.open("GET", `https://pokeapi-nycda.firebaseio.com/pokemon/25.json`, true); // This is the backup api call
+  xhhtp.open("GET", `https://pokeapi.co/api/v2/pokemon/${iChooseYou}`, true);
+  xhhtp.send();
+}
 
 class Trainer {
   constructor() {
@@ -43,8 +61,7 @@ class Red extends Trainer {
 
     this.pokemon = {
       pikachu: {
-        name: "pikachu",
-        image: get("pikachu"),
+        name: "pikachu"
       },
       mewtwo: {},
       rapidash: {}
@@ -53,6 +70,21 @@ class Red extends Trainer {
 
   get(pokemon) {
     iChooseYou = pokemon;
+    callPokemon();
   }
 
+}
+
+function updateScreen(){
+  let unorderedList = document.getElementById('ability-list');
+  let listItem = document.createElement('li');
+  listItem.innerHTML="Hello";
+
+  unorderedList.appendChild(listItem);
+}
+
+function updatePokedex(pokeName){
+  let trainerRed = new Red();
+  trainerRed.get(pokeName);
+  updateScreen();
 }

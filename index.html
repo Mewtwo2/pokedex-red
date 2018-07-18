@@ -26,18 +26,23 @@
   </div>
 
   <div class="red-rotation">
-    <div class="reds-pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"></div>
-    <div class="reds-pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png"></div>
-    <div class="reds-pokemon"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png"></div>
+    <div class="reds-pokemon"><img onclick="updatePokedex('pikachu')" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"></div>
+    <div class="reds-pokemon"><img onclick="updatePokedex('mewtwo')" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png"></div>
+    <div class="reds-pokemon"><img onclick="updatePokedex('rapidash')" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png"></div>
   </div>
 
   <div class="pokedex-info">
     <!-- <img src="images/pikachu.gif">
     <img src="images/mewtwo.gif"> -->
-    <img onclick="changePokedex()" src="images/rapidash.gif">
+    <img src="images/rapidash.gif">
 
     <div class="pokemon-info">
-      <p>Rapidash is the best<br>Rapidash is the best<br>Rapidash is the best<br>Rapidash is the best<br>Rapidash is the best</p>
+      <ul id="ability-list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   </div>
 

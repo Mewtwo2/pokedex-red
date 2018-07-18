@@ -99,13 +99,15 @@ nav img {
 
 .red-rotation div img {
   height:300px;
-  transition:height;
+  opacity:0.9;
+  transition:opacity height;
   transition-duration: .8s;
   transition-timing-function: ease-in-out;
 }
 
 .red-rotation div img:hover {
   height:350px;
+  opacity:1;
   cursor:pointer;
 }
 
@@ -131,4 +133,8 @@ nav img {
   max-width: 90%;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+#ability-list {
+  list-style-type: none;
 }
