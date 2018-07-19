@@ -135,6 +135,8 @@ nav img {
   border-radius: 5px;
 }
 
-#ability-list {
+#ability-list{
   list-style-type: none;
+  text-align: center;
+  padding-right: 9%;
 }

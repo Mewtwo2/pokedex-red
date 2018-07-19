@@ -3,6 +3,7 @@ var hp;
 var atk;
 var def;
 var abilities = [];
+var pokedexImage = document.getElementById('pokedex-image');
 
 var xhhtp = new XMLHttpRequest();
 
@@ -15,6 +16,8 @@ function callPokemon() {
 
       var abilityArray = parsedObject['abilities'];
       abilities = [];
+
+      pokedexImage.src=`images/${iChooseYou}.gif`;
 
       hp = parsedObject['stats'][5]['base_stat'];
       console.log(hp);
@@ -78,7 +81,7 @@ class Red extends Trainer {
 function updateScreen(){
   let unorderedList = document.getElementById('ability-list');
   let listItem = document.createElement('li');
-  listItem.innerHTML="Hello";
+  listItem.innerHTML=hp; console.log(hp);
 
   unorderedList.appendChild(listItem);
 }
