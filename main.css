@@ -124,8 +124,6 @@ a {
   padding-bottom:2%;
   margin-bottom:1%;
   margin-top:1%;
-  transition: display;
-  transition-duration: 2s;
 }
 
 #pokedex-info img {
