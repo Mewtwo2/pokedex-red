@@ -10,7 +10,7 @@
 
   <nav>
     <ul>
-      <a href="">
+      <a href="#">
         <li>Home</li>
       </a>
       <a href="">
@@ -21,7 +21,6 @@
       </a>
     </ul>
 
-    <img src="images/master-ball.png" />
   </nav>
 
   <div class="red-info">
@@ -37,7 +36,11 @@
     <div class="reds-pokemon"><img onclick="makePokemon('rapidash')" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png"></div>
   </div>
 
-  <div class="pokedex-info">
+  <div class="master-ball-div">
+    <img src="images/master-ball.png" id="generate-stat-button" onclick="updateScreen(clickedPokemon)"/>
+  </div>
+
+  <div id="pokedex-info">
 
     <img id="pokedex-image" src="">
 
@@ -47,11 +50,10 @@
         <li class="list-item"></li>
         <li class="list-item"></li>
         <li class="list-item"></li>
+        <li class="list-item"></li>
       </ul>
     </div>
   </div>
-
-  <button type="button" id="generate-stat-button" onclick="updateScreen(clickedPokemon)">Show Stats!</button>
 
   <script src="main.js"></script>
 </body>
