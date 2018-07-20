@@ -1,20 +1,27 @@
-Pokemon = [];
-
+Red = [];
 
 class Trainer {
   constructor(name) {
     this.name = name;
   }
 
-  get(pokemon) {
+  get(name) {
+    var Pokemon = makePokemon(name);
+    console.log(Pokemon);
+    return Pokemon;
+  }
 
+  all(){
+    return Red;
   }
 }
 
 function makePokemon(iChooseYou) {
 
-  if(Pokemon.contains){
-    
+  for (each in Red) {
+    if (Red[each]['name'] == iChooseYou) {
+      return;
+    }
   }
 
   let Poke = {
@@ -37,5 +44,18 @@ function makePokemon(iChooseYou) {
   xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${iChooseYou}`, true);
   xhttp.send();
 
-  Pokemon.push(Poke);
+  Red.push(Poke);
+console.log(Red);
+  updateScreen();
+
+  return Poke;
+}
+
+
+function updateScreen(){
+  var statList = document.getElementById('ability-list');
+  var listItems = document.getElementsByClassName('list-item');
+  z = Red[0]
+  console.log(z.name);
+
 }
