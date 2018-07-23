@@ -91,7 +91,7 @@ a {
 
 .red-rotation div img {
   height:300px;
-  opacity:0.9;
+  opacity:0.8;
   transition:opacity height;
   transition-duration: .8s;
   transition-timing-function: ease-in-out;
