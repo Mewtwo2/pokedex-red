@@ -7,13 +7,14 @@ nav {
   background-color: #EE6B2F;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-bottom: 1%; /*This is what is making your red info div spaced form the navbar*/
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  margin-bottom: 1%;
+  /*This is what is making your red info div spaced form the navbar*/
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 nav ul {
-  margin:0;
-  margin-top:1.4%;
+  margin: 0;
+  margin-top: 1.4%;
   max-width: 50%;
   padding-left: 0.5%;
 }
@@ -21,14 +22,14 @@ nav ul {
 nav ul a li {
   font-family: sans-serif;
   font-size: 140%;
-  font-weight:500;
-  color:white;
+  font-weight: 500;
+  color: white;
   padding: 2%;
   text-align: left;
   display: inline;
 }
 
-nav ul a li:hover{
+nav ul a li:hover {
   background-color: #DA471B;
   border-radius: 6px;
   font-weight: bold;
@@ -43,64 +44,66 @@ a {
   align-content: center;
   margin: 0 auto;
   width: 90%;
-  background-color: rgba(255,218,0,1);
+  background-color: rgba(255, 218, 0, 1);
 }
 
 .red-header-span {
   font-size: 350%;
-  color:white;
-  padding:2% 2% 1% 2%; /*top right bottom left*/
+  color: white;
+  padding: 2% 2% 1% 2%;
+  /*top right bottom left*/
   border-radius: 10px;
-  position:absolute;
-  top:20%;
-  right:35%;
+  position: absolute;
+  top: 20%;
+  right: 35%;
   text-transform: uppercase;
-  background-color: rgba(170,93,97,0.7);
+  background-color: rgba(170, 93, 97, 0.7);
 }
 
 .red-bio-span {
   font-size: 150%;
-  color:white;
-  padding:2% 2% 1% 2%; /*top right bottom left*/
-  position:absolute;
-  text-align:center;
+  color: white;
+  padding: 2% 2% 1% 2%;
+  /*top right bottom left*/
+  position: absolute;
+  text-align: center;
   border-radius: 10px;
-  bottom:20%;
-  right:10%;
+  bottom: 20%;
+  right: 10%;
   left: 25%;
   text-transform: uppercase;
-  background-color: rgba(170,93,97,0.7);
+  background-color: rgba(170, 93, 97, 0.7);
 }
 
 .red-rotation {
   align-self: auto;
   border-radius: 10px;
-  max-width:90%;
-  width:90%;
-  margin:0 auto;
+  max-width: 90%;
+  width: 90%;
+  margin: 0 auto;
   margin-right: 6% !important;
-  display:grid;
-  grid-template-columns:33.3% 33.3% 33.3%;
-  grid-template-rows:100%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 100%;
   grid-gap: 1%;
 }
 
-.red-rotation div{
-  text-align:center;
+.red-rotation div {
+  text-align: center;
 }
 
 .red-rotation div img {
-  height:300px;
-  opacity:0.8;
-  transition:opacity height;
+  height: 300px;
+  opacity: 0.8;
+  transition: opacity height;
   transition-duration: .8s;
   transition-timing-function: ease-in-out;
 }
 
 .red-rotation div img:hover {
-  height:350px;
-  opacity:1;
-  cursor:pointer;
+  height: 350px;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .master-ball-div {
@@ -110,25 +113,25 @@ a {
 
 .master-ball-div img {
   height: 75px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #pokedex-info {
-  display:none;
+  display: none;
   background-color: #1B53BA;
   border-radius: 10px;
   max-width: 90%;
   width: 30%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom:2%;
-  margin-bottom:1%;
-  margin-top:1%;
+  padding-bottom: 2%;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 #pokedex-info img {
   text-align: center;
-  width:200px;
+  width: 200px;
 }
 
 #pokedex-info .pokemon-info {
@@ -138,7 +141,7 @@ a {
   border-radius: 5px;
 }
 
-#stat-list{
+#stat-list {
   list-style-type: none;
   text-align: center;
   padding-right: 9%;

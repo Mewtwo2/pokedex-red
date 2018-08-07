@@ -51,20 +51,11 @@ function makePokemon(pkname) {
 
     }
   };
-  xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${pkname}`, true);
+  xhttp.open("GET", `https://bitbucket.org/goldenBoySailsLow/pokeapi/raw/ac12e2bf7a87c0abcde518058eea8299a2d120c0/${pkname}`, true);
   xhttp.send();
 
   allPokemon.push(newPokemon);
   console.log(allPokemon);
-  updatePokemon();
-}
-
-function updatePokemon() {
-  // console.log(allPokemon);
-  y = allPokemon.shift();
-  console.log(y.name);
-  allPokemon.push(y);
-  console.log(allPokemon[0].name);
 }
 
 function updateScreen(currentPokemon) {
