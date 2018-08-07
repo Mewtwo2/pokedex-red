@@ -1,3 +1,5 @@
+# Personal Pokedex
+
 __About__ : This is a Pokedex that holds some of trainer Red's Pokemon.
 
 In order to get info about his pokemon, you have to click on the Pokemon whose data you want to see.
